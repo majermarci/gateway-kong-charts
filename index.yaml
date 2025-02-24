@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  stargate:
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: "2025-02-24T12:54:06.42708073Z"
+    dependencies:
+    - name: postgresql
+      repository: ""
+      version: 1.0.0
+    description: Kong API gateway provided by DHEI
+    digest: 151fbf2f62309780646c21140be83aec82d4074cfdfe1bb82246ce705220375f
+    maintainers:
+    - email: DTIT_ENI_Hub_Team_Hyperion@telekom.de
+      name: Team Hyperion
+    name: stargate
+    urls:
+    - https://github.com/majermarci/gateway-kong-charts/releases/download/stargate-5.5.3/stargate-5.5.3.tgz
+    version: 5.5.3
+generated: "2025-02-24T12:54:06.427086581Z"
