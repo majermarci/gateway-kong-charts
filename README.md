@@ -360,6 +360,21 @@ This is a short overlook about important parameters in the `values.yaml`.
 | `autoscaling.cpuUtilizationPercentage`              | Number of target CPU Utilization                                                                                                          | `80`                                  |
 | `logFormat`                                         | Selects the mginx log format `default`, `json` or `plain`                                                                                 | `default`                             |
 
+## Install and upgrade
+
+To install the chart run the following commands:
+
+```bash
+# Add the GitHub repository as a Helm chart repository
+helm repo add tardis-gateway https://majermarci.github.io/gateway-kong-charts
+
+# Update your local Helm chart repositories
+helm repo update
+
+# Install the chart
+helm upgrade --install my-stargate tardis-gateway/stargate -n tardis_test --create-namespace
+```
+
 ## Troubleshooting
 
 If the Gateway deployment fails to come up, please have a look at the logs of the container.
