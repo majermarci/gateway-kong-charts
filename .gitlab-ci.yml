@@ -15,4 +15,3 @@ include:
 .setup_job_basics: &setup_job_basics
   tags:
   - otc_run_sysbox_m
-
