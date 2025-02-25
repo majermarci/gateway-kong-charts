@@ -1,0 +1,6 @@
+sign: false
+
+owner: telekom
+git-repo: gateway-kong-charts
+git-base-url: https://api.github.com/
+git-upload-url: https://uploads.github.com/
