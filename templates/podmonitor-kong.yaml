@@ -10,6 +10,10 @@ spec:
   podMetricsEndpoints:
     - port: metrics
       path: {{ .Values.plugins.prometheus.path | default "/metrics" }}
+      {{- with .Values.plugins.prometheus.podMonitor.metricRelabelings }}
+      metricRelabelings:
+      {{- toYaml . | nindent 6 }}
+      {{- end }}
       {{- if .Values.plugins.prometheus.podMonitor.scheme }}
       scheme: {{ .Values.plugins.prometheus.podMonitor.scheme }}
       {{- end }}

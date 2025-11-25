@@ -657,6 +657,8 @@ plugins:
     serviceMonitor:
       # -- Enables a servicemonitor which can be used by the prometheus operator to collect metrics
       enabled: true
+      # -- Can be used to manipulate metric labels at scrape time
+      metricRelabelings: []
       # -- default selector label (only label)
       selector: "guardians-raccoon"
       # -- HTTP scheme to use for scraping
@@ -670,6 +672,8 @@ plugins:
     podMonitor:
       # -- Enables a podmonitor which can be used by the prometheus operator to collect metrics
       enabled: false
+      # -- Can be used to manipulate metric labels at scrape time
+      metricRelabelings: []
       #selector: "guardians-raccoon"
       # -- HTTP scheme to use for scraping
       # scheme: http
