@@ -819,8 +819,10 @@ This is a short overlook about important parameters in the `values.yaml`.
 | plugins.prometheus.path | string | `"/metrics"` | Sets the endpoint at which at which metrics can be accessed |
 | plugins.prometheus.pluginId | string | `"3d232d3c-dc2b-4705-aa8d-4e07c4e0ff4c"` | pluginId for configuration in kong |
 | plugins.prometheus.podMonitor.enabled | bool | `false` | Enables a podmonitor which can be used by the prometheus operator to collect metrics |
+| plugins.prometheus.podMonitor.metricRelabelings | list | `[]` | Can be used to manipulate metric labels at scrape time |
 | plugins.prometheus.port | int | `9542` | Sets the port at which metrics can be accessed |
 | plugins.prometheus.serviceMonitor.enabled | bool | `true` | Enables a servicemonitor which can be used by the prometheus operator to collect metrics |
+| plugins.prometheus.serviceMonitor.metricRelabelings | list | `[]` | Can be used to manipulate metric labels at scrape time |
 | plugins.prometheus.serviceMonitor.selector | string | `"guardians-raccoon"` | default selector label (only label) |
 | plugins.requestSizeLimiting.enabled | bool | `true` |  |
 | plugins.requestSizeLimiting.pluginId | string | `"1e199eee-f592-4afa-8371-6b61dcbd1904"` | pluginId for configuration in kong |
